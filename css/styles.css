@@ -48,7 +48,7 @@ nav a:hover {
     padding: 150px 0;
     background-image: url('hero-bg.jpg');
     background-size: cover;
-    color: white;
+    color: #4c3c32;
 }
 
 .hero h1 {
@@ -80,6 +80,33 @@ nav a:hover {
 }
 
 .menu h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.coffee {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.coffee h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.pastry {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.pastry h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.pasta {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.pasta h2 {
     font-size: 30px;
     margin-bottom: 20px;
 }
@@ -123,4 +150,16 @@ footer {
     color: white;
     text-align: center;
     padding: 20px 0;
+}
+
+.featured {
+	position: relative;
+
+}
+
+.featured_img img {
+	width:250px;
+	height:300px;
+	margin:110px;
+	border:3px solid #808080;
 }

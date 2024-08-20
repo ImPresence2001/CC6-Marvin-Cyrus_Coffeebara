@@ -4,17 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <title>CozyCup Café</title>
+    <link rel = "icon" href ="img/icon.png" 
+			type = "image/x-icon">
+    <title>Grind Geeks Coffee Shop</title>
 </head>
 <body>
     <header>
         <nav>
             <div class="logo">
-                <img src="img/logo.png" alt="CozyCup Café Logo">
+                <img src="img/logo_2.png" alt="Logo">
             </div>
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#menu">Menu</a></li>
+                <li><div class="dropdown">
+                    <a href="#menu">Menu</a>
+                    <div class="dropdown-content">
+                      <a href="#coffee">Coffee</a>
+                      <a href="#pastry">Pastry</a>
+                      <a href="#pasta">Pasta</a>
+                    </div>
+                  </div></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -22,15 +31,47 @@
     </header>
 
     <section id="home" class="hero">
-        <h1>Welcome to CozyCup Café</h1>
-        <p>Discover Your Perfect Brew</p>
+        <h1>Welcome to Grind Geeks Café</h1>
+        <p>Where passion for tech meets a love for coffee.</p>
         <a href="#menu" class="cta-button">Explore Menu</a>
     </section>
 
     <section id="menu" class="menu">
         <h2>Our Menu</h2>
-        <!-- Add menu items here -->
     </section>
+    
+<section id="coffee" class="coffee">
+    <center><h2>Coffee</h2></center>
+    <div class="featured">
+        <div class="featured_img">
+            <a href="#"><img src="img/products/coffee1.jpg" alt="Coffee 1"></a>
+            <a href="#"><img src="img/products/coffee2.jpg" alt="Coffee 2"></a>
+            <a href="#"><img src="img/products/coffee3.jpg" alt="Coffee 3"></a>
+            <a href="#"><img src="img/products/coffee4.jpg" alt="Coffee 4"></a>
+            <a href="#"><img src="img/products/coffee5.jpg" alt="Coffee 5"></a>
+    </div>
+</section>
+
+<section id="pastry" class="pastry">
+    <center><h2>Pastry</h2></center>
+    <div class="featured">
+        <div class="featured_img">
+            <a href="#"><img src="img/products/pastry1.jpg" alt="Pastry 1"></a>
+            <a href="#"><img src="img/products/pastry2.jpg" alt="Pastry 2"></a>
+            <a href="#"><img src="img/products/pastry3.jpg" alt="Pastry 3"></a>
+    </div>
+</section>
+
+<section id="pasta" class="pasta">
+    <center><h2>Pasta</h2></center>
+    <div class="featured">
+        <div class="featured_img">
+            <a href="#"><img src="img/products/pasta1.jpg" alt="Pasta 1"></a>
+            <a href="#"><img src="img/products/pasta2.jpg" alt="Pasta 2"></a>
+            <a href="#"><img src="img/products/pasta3.jpg" alt="Pasta 3"></a>
+            <a href="#"><img src="img/products/pasta4.jpg" alt="Pasta 4"></a>
+    </div>
+</section>
 
     <section id="about" class="about">
         <h2>About Us</h2>
