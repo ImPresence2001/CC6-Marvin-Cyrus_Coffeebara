@@ -5,13 +5,13 @@ body, h1, h2, h3, p, ul, li {
 }
 
 body {
-    font-family: cursive, handwriting;
-    background-color: #fde353;
-    color: #381a09;
+    font-family: Arial, sans-serif;
+    background-color: #f8f2e0;
+    color: #4c3c32;
 }
 
 header {
-    background-color: #47341c;
+    background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 20px;
 }
@@ -23,11 +23,7 @@ nav {
 }
 
 .logo img {
-    max-width: 125px;
-}
-
-.Logo1 img {
-    max-width: 250px;
+    max-width: 100px;
 }
 
 nav ul {
@@ -123,7 +119,6 @@ nav a:hover {
 }
 
 footer {
-    font-family: Arial, sans-serif;
     background-color: #4c3c32;
     color: white;
     text-align: center;
