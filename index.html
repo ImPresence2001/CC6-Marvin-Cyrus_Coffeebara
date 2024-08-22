@@ -9,26 +9,21 @@
     <title>Coffeebara</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="img/cafebara.png" alt="Logo">
-            </div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><div class="dropdown">
-                    <a href="#menu">Menu</a>
-                    <div class="dropdown-content">
-                      <a href="#coffee">Coffee</a>
-                      <a href="#pastry">Pastry</a>
-                      <a href="#pasta">Pasta</a>
-                    </div>
-                  </div></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <header class="header">
+        <div class="header-wrapper">
+        <a href="#main" class="logo">
+          <img src="img/coffeebara.png" alt="logo GoJob" width="250">
+        </a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      </header>
 
     <section id="home" class="hero">
         <h1>Welcome to Coffeebara</h1>
