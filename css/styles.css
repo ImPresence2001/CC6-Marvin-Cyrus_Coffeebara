@@ -1,20 +1,20 @@
 /* Reset some default styles */
+html {
+    scroll-behavior: smooth;
+  }
+
 body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f2e0;
+    margin: 0;  
+    font-family: 'Roboto', sans-serif;  
+    background-color: #ffffff;
     color: #4c3c32;
 }
 
-header {
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-}
 
 nav {
     display: flex;
@@ -23,7 +23,7 @@ nav {
 }
 
 .logo img {
-    max-width: 100px;
+    max-width: 200px;
 }
 
 nav ul {
@@ -48,7 +48,7 @@ nav a:hover {
     padding: 150px 0;
     background-image: url('hero-bg.jpg');
     background-size: cover;
-    color: white;
+    color: #4c3c32;
 }
 
 .hero h1 {
@@ -80,6 +80,33 @@ nav a:hover {
 }
 
 .menu h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.coffee {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.coffee h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.pastry {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.pastry h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.pasta {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.pasta h2 {
     font-size: 30px;
     margin-bottom: 20px;
 }
@@ -124,3 +151,173 @@ footer {
     text-align: center;
     padding: 20px 0;
 }
+
+.featured {
+	position: relative;
+
+}
+
+.featured_img img {
+	width:250px;
+	height:300px;
+	margin:110px;
+	border:3px solid #808080;
+}
+
+/* header */
+
+.header {
+    background-color: #ede4d6;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.2);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    opacity:0.92;
+  }
+  
+  .header-wrapper{
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  .header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    //background-color: #fff;
+  }
+  
+  .header li a {
+    display: block;
+    color: #7e685b;
+    padding: 20px 20px;
+    border-right: 1px solid #f4f4f4;
+    text-decoration: none;
+  }
+  
+  .header li a:hover,
+  .header .menu-btn:hover {
+    background-color: #e2dacc;
+  }
+  
+  .header .logo {
+    display: block;
+    float: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    padding: 10px 10px;
+    color: #0000ff;
+    font-weight: 900;
+    text-decoration: none;
+  }
+  
+  /* menu */
+  
+  .header .menu {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+  
+  /* menu icon */
+  
+  .header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+  
+  .header .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+  
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .header .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+  .header .menu-icon .navicon:after {
+    top: -5px;
+  }
+  
+  /* menu btn */
+  
+  .header .menu-btn {
+    display: none;
+  }
+  
+  .header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+  
+  /* 48em = 768px */
+  
+  @media (min-width: 48em) {
+    .header li {
+      float: left;
+    }
+    .header li a {
+      padding: 20px 30px;
+    }
+    .header .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .header .menu-icon {
+      display: none;
+    }
+  }
+  
+  .box {
+    max-width: 960px;
+    margin: 0 auto;
+    min-height: 800px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .box h1 {
+    font-size: 3em;
+    color: white;
+  }

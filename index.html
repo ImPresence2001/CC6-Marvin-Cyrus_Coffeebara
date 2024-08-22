@@ -4,37 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <title>CozyCup Café</title>
+    <link rel = "icon" href ="img/icon.png" 
+			type = "image/x-icon">
+    <title>Coffeebara</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="img/logo.png" alt="CozyCup Café Logo">
-            </div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <header class="header">
+        <div class="header-wrapper">
+        <a href="#main" class="logo">
+          <img src="img/coffeebara.png" alt="logo GoJob" width="250">
+        </a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      </header>
 
     <section id="home" class="hero">
-        <h1>Welcome to CozyCup Café</h1>
-        <p>Discover Your Perfect Brew</p>
+        <h1>Welcome to Coffeebara</h1>
+        <p>Where capybara lovers meets a love for coffee.</p>
         <a href="#menu" class="cta-button">Explore Menu</a>
     </section>
 
     <section id="menu" class="menu">
         <h2>Our Menu</h2>
-        <!-- Add menu items here -->
     </section>
+    
+<section id="coffee" class="coffee">
+    <center><h2>Coffee</h2></center>
+    <div class="featured">
+        <div class="featured_img">
+            <a href="#"><img src="img/matcha.png" alt="Matcha Kofi Latte"></a>
+            <a href="#"><img src="img/kofi latte.png" alt="Kofi Latte"></a>
+            <a href="#"><img src="img/pure.png" alt="Pure Kofi"></a>
+            <a href="#"><img src="img/strawberry.png" alt="Strawberry Kofi Latte"></a>
+            <a href="#"><img src="img/saltedcaramel.png" alt="Salted Caramel Kofi"></a>
+    </div>
+</section>
+
+<section id="pastry" class="pastry">
+    <center><h2>Pastry</h2></center>
+    <div class="featured">
+        <div class="featured_img">
+            <a href="#"><img src="img/products/pastry1.jpg" alt="Pastry 1"></a>
+            <a href="#"><img src="img/products/pastry2.jpg" alt="Pastry 2"></a>
+            <a href="#"><img src="img/products/pastry3.jpg" alt="Pastry 3"></a>
+    </div>
+</section>
+
+<section id="pasta" class="pasta">
+    <center><h2>Pasta</h2></center>
+    <div class="featured">
+        <div class="featured_img">
+            <a href="#"><img src="img/products/pasta1.jpg" alt="Pasta 1"></a>
+            <a href="#"><img src="img/products/pasta2.jpg" alt="Pasta 2"></a>
+            <a href="#"><img src="img/products/pasta3.jpg" alt="Pasta 3"></a>
+            <a href="#"><img src="img/products/pasta4.jpg" alt="Pasta 4"></a>
+    </div>
+</section>
 
     <section id="about" class="about">
         <h2>About Us</h2>
-        <p>Discover the story behind CozyCup Café...</p>
+        <p>Discover the story behind Coffebara...</p>
     </section>
 
     <section id="contact" class="contact">
@@ -43,7 +79,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2023 CozyCup Café. All rights reserved.</p>
+        <p>&copy; 2023 Coffeebara. All rights reserved.</p>
     </footer>
 </body>
 </html>
