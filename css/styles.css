@@ -1,8 +1,8 @@
 /* Reset some default styles */
-html {
-    scroll-behavior: smooth;
-  }
-
+html{
+  background-color: #4c3c32;
+  scroll-behavior: smooth;
+}
 body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
@@ -45,10 +45,9 @@ nav a:hover {
 
 .hero {
     text-align: center;
-    padding: 150px 0;
-    background-image: url('hero-bg.jpg');
-    background-size: cover;
-    color: #4c3c32;
+    padding: 375px 0;
+    background: url('header-bg.jpg') no-repeat center;
+    color: #ffffff;
 }
 
 .hero h1 {
@@ -178,7 +177,6 @@ nav a:hover {
     padding: 0;
     list-style: none;
     overflow: hidden;
-    //background-color: #fff;
   }
   
   .header li a {
@@ -221,7 +219,6 @@ nav a:hover {
   .header .menu-icon {
     cursor: pointer;
     display: inline-block;
-    float: right;
     padding: 28px 20px;
     position: relative;
     user-select: none;
@@ -316,7 +313,7 @@ nav a:hover {
   }
 
   footer{
-    margin-top: 250px;
+    margin-top: 0px;
     background-color: #4c3c32;
     color: white;
     position: relative;
@@ -395,4 +392,37 @@ footer .fa-whatsapp{
         font-size: 11px;
     }
 }
-    
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.containerform {
+  background-color: #4c3c32;
+  padding: 20px;
+  display: flex;
+  margin: 0 auto; 
+  width:550px;
+}
+.containerform label {
+  color: white;
+}
